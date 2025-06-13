@@ -1,5 +1,8 @@
-## Hi there 👋
+## Salutations
 
+Firuz Sharipov • ML Engineer + in-training
+
+- Currently learning multi-layer perceptron network design and implementation
 <!--
 **qvattr0/qvattr0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
