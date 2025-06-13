@@ -2,6 +2,7 @@
 
 Firuz Sharipov • ML Engineer + in-training
 
+- _Aerospace Engineering_ @ umich
 - Currently learning multi-layer perceptron network design and implementation
 <!--
 **qvattr0/qvattr0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
