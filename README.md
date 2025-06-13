@@ -1,4 +1,4 @@
-## Salutations
+## WTMW
 
 Firuz Sharipov • ML Engineer + in-training
 
