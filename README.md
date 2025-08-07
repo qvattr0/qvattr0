@@ -1,4 +1,4 @@
-![The LORNE banner](assets/banner_1000x3000.png)
+![The LORNE banner](assets/banner_1000x3000-rounded.png)
 
 Firuz Sharipov • ML Engineer + in-training
 - _Aerospace Engineering_ @ umich
