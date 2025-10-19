@@ -98,12 +98,13 @@ if selected_size is None:
     selected_size = 20
 font = load_font(selected_size)
 
-# compute bounding box for ascii art at selected size
-bbox = draw.multiline_textbbox((0,0), ascii_art, font=font, spacing=0)
-w = bbox[2] - bbox[0]
-h = bbox[3] - bbox[1]
-x_text = (WIDTH - w)//2
-y_text = (HEIGHT - h)//2
+# compute bounding box for ascii art at selected size and center accurately
+bbox = draw.multiline_textbbox((0, 0), ascii_art, font=font, spacing=0)
+left, top, right, bottom = bbox
+w = right - left
+h = bottom - top
+x_text = int(round((WIDTH - w) / 2 - left))
+y_text = int(round((HEIGHT - h) / 2 - top))
 
 # generate starry background with varied speck sizes
 num_stars = int(WIDTH * HEIGHT * 0.00030)  # density based on area, 0.00015 for not too dense
@@ -112,8 +113,15 @@ for _ in range(num_stars):
     y = random.randint(0, HEIGHT - 1)
     brightness = random.randint(180, 255)
     color = (brightness, brightness, brightness, 255)
+    tint_choice = random.random()
+    if tint_choice < 0.04:
+        color = (255, 130, 130, 255)
+    elif tint_choice < 0.07:
+        color = (255, 230, 120, 255)
+    elif tint_choice < 0.085:
+        color = (120, 180, 255, 255)
     star_radius = random.choice([0, 0, 1, 1, 2])
-    plus_probability = 0.06
+    plus_probability = 0.15
     wants_plus_star = random.random() < plus_probability
     if wants_plus_star:
         spike_len = random.randint(3, 5)
