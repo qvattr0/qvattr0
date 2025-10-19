@@ -1,6 +1,6 @@
 ![The LORNE banner](assets/banner_1000x3000-rounded.png)
 
-Firuz Sharipov • AI/ML Engineer @ SmartPay
+Firuz Sharipov • **AI/ML** Engineer @ SmartPay
 - _Aerospace Engineering_ @ umich
 
 <!--
